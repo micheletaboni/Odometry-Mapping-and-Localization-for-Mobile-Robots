@@ -12,7 +12,7 @@ Before starting we should compute some important parameters like the **radius of
 
 $$
 \begin{cases}
-omega_{wheel} = \frac{2 \pi rpm }{60} \\
+\omega_{wheel} = \frac{2 \pi rpm }{60} \\
 L = \frac{v_L - v_R}{\omega}
 \end{cases}
 $$
@@ -36,12 +36,15 @@ $$
 
 $$
 \begin{cases}
-\x_{k+1} = x_{k} + \frac{v_{k}}{\omega_k}(sin(\theta_{k+1}) - sin(\theta_{k})) \\
-\y_{k+1} = y_{k} - \frac{v_{k}}{\omega_k}(cos(\theta_{k+1}) - cos(\theta_{k})) \\
+x_{k+1} = x_{k} + \frac{v_{k}}{\omega_k}(sin(\theta_{k+1}) - sin(\theta_{k})) \\
+y_{k+1} = y_{k} - \frac{v_{k}}{\omega_k}(cos(\theta_{k+1}) - cos(\theta_{k})) \\
 \theta_{k+1} = \theta_{k} + \omega_k T_{s}
 \end{cases}
 $$
 
+## How to use it
+
+This program can be executed by launching the launch file contained in the folder. There is also a service, contained in the srv folder, that can be called whenever you want to reset the odometry computed till that moment 
 
 ## Results
 
