@@ -12,8 +12,8 @@ Before starting we should compute some important parameters like the **radius of
 
 $$
 \begin{cases}
-\omega_{wheel} = \frac{2 \pi rpm }{60} \\
-\L = \frac{v_L - v_R}{\omega}
+omega_{wheel} = \frac{2 \pi rpm }{60} \\
+L = \frac{v_L - v_R}{\omega}
 \end{cases}
 $$
 
@@ -25,8 +25,8 @@ For computing odometry we should integrate over time using a discrete form and s
 
 $$
 \begin{cases}
-\x_{k+1} = x_{k} + v_{k}T_{s}cos(\theta_{k} + \frac{\omega_k T_{s}}{2}) \\
-\y_{k+1} = y_{k} + v_{k}T_{s}sin(\theta_{k} + \frac{\omega_k T_{s}}{2}) \\
+x_{k+1} = x_{k} + v_{k}T_{s}cos(\theta_{k} + \frac{\omega_k T_{s}}{2}) \\
+y_{k+1} = y_{k} + v_{k}T_{s}sin(\theta_{k} + \frac{\omega_k T_{s}}{2}) \\
 \theta_{k+1} = \theta_{k} + \omega_k T_{s}
 \end{cases}
 $$
