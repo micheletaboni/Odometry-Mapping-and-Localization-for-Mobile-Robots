@@ -20,4 +20,4 @@ Then, always in Nav2, it was possible to configure the controller for the robot.
 
 This video is in x4
 
-![Video della navigazione](images/navigation.mp4)
+![Navigation Video](images/navigation.mp4)
