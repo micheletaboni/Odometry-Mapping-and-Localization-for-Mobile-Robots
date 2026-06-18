@@ -1,0 +1,3 @@
+# Odometry, Mapping and Localization for Mobile Robots
+
+This project, developed in ROS2 (C++), implements the full pipeline for mapping, localization, and autonomous navigation of an AgileX Scout Mini mobile robot. The system first processes raw 3D LiDAR data from a ROS bag, filtering and converting it into a 2D LaserScan format using a custom C++ node. With this processed data, SLAM Toolbox and Ceres Solver generate a 2D map of the environment while handling loop closure. For the navigation phase, the robot is simulated in Stage, where artificial odometry drift (primarily rotational) is injected to replicate real-world inaccuracies. Finally, a custom Nav2 Action Client drives the robot to autonomously navigate through a sequence of target poses provided via a CSV file.
